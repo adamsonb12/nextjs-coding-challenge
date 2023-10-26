@@ -9,12 +9,14 @@
     "lint": "next lint",
     "test": "jest",
     "test-watch": "jest --watchAll",
-    "format.fix": "prettier --write ."
+    "format.fix": "prettier --write .",
+    "codegen": "graphql-codegen"
   },
   "dependencies": {
     "@apollo/client": "^3.8.6",
     "@apollo/server": "^4.9.4",
     "@as-integrations/next": "^2.0.2",
+    "date-fns": "^2.30.0",
     "graphql": "^16.8.1",
     "graphql-scalars": "^1.22.4",
     "graphql-tag": "^2.12.6",
@@ -23,9 +25,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sequelize": "^6.32.1",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
     "@testing-library/jest-dom": "^6.0.1",
     "@testing-library/react": "^14.0.0",
     "@types/node": "20.8.7",
