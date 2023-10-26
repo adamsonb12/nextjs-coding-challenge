@@ -46,5 +46,22 @@ If Next JS/TS is not your stack, that's ok. Apply best patterns from what you ar
 Please email code-challenge@getzena.com with a link to your forked submission. Feel free to edit this README.md and explain things like:
 
 - what you did include and why
+
+1. Graphql => better on client side for both engineers and better UX
+2. Nexus => code first graphql schema, plays really well in the typescript stack
+3. Styled components instead of tailwind, much faster for me, much more readable in general
+
 - what you didn't include and why
-- what you would add with more time
+
+1. Expanded date formatting, just not necessary time wise
+2. Dynamic filters, no time, not great in most cases in ux anyway
+
+- what you would add with more time (or in the real world on a real project)
+
+1. Prisma => plays better with typescript than sequilize imo
+2. Organized server side code differently, separated out more from FE in a modular way
+   1. DB code should be services, available through the HTTP context
+3. Next 13 app directory rather than pages, better SSR which results in a faster app
+4. Initializing DB shouldn’t happen in Context init, but it is what it is for now
+5. Pagination on getting transactions via graphql connection rather than just a straight list of results
+6. Theming
