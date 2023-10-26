@@ -1,18 +1,19 @@
-import type { NextPage } from 'next';
-import { useEffect, useState } from 'react';
-import TransactionCard from '../components/TransactionCard';
+import type { NextPage } from "next";
+import { useEffect, useState } from "react";
+import TransactionCard from "../components/TransactionCard";
 
 const Home: NextPage = () => {
   const [transactions, setTransactions] = useState<any[]>([]);
-  const fetchTransactions = async () => {
-    const response = await fetch('/api/transactions');
-    const data = await response.json();
-    setTransactions(data);
-  };
+  // const fetchTransactions = async () => {
+  //   const response = await fetch("/api/transactions");
+  //   const data = await response.json();
+  //   console.log("🚀 ~ data:", data);
+  //   setTransactions(data);
+  // };
 
-  useEffect(() => {
-    fetchTransactions();
-  }, []);
+  // useEffect(() => {
+  //   fetchTransactions();
+  // }, []);
 
   return (
     <div className="w-full h-full">

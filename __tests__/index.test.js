@@ -1,18 +1,18 @@
-import { render, waitFor } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import Home from '../pages/index';
+import { render, waitFor } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import Home from "../pages/index";
 
-describe('Home', () => {
+describe("Home", () => {
   beforeEach(() => {
     fetch.resetMocks();
   });
 
-  it('renders a heading', async () => {
+  it("renders a heading", async () => {
     fetch.mockResponse(JSON.stringify([]));
 
     const { getByRole } = render(<Home />);
 
-    const heading = getByRole('heading', {
+    const heading = getByRole("heading", {
       name: /Transactions/i,
     });
 

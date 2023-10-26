@@ -1,0 +1,10 @@
+build
+.next
+
+node_modules
+.github
+.vscode
+src/apollo/schema.graphql
+src/apollo/nexus-typegen.ts
+
+types/gql
